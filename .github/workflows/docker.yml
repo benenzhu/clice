@@ -26,7 +26,7 @@ jobs:
           output: type=tar,dest=image.tar
 
       - name: Upload image artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: docker-image-tar
           path: image.tar
