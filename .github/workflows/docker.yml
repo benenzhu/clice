@@ -1,8 +1,9 @@
 name: Download and Release Large File
 
 on:
-  workflow_dispatch:  # 手动触发
-  # 或者设置其他触发条件，如 push、schedule 等
+  push:
+    branches:
+      - main
 
 jobs:
   download-and-release:
